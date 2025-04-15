@@ -1,140 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PuffHaus | The Haus of Smooth Hits</title>
-  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Urbanist', sans-serif;
-      margin: 0;
-      background: url('https://images.unsplash.com/photo-1602682102220-1a9982c71b4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80') no-repeat center center fixed;
-      background-size: cover;
-      color: #ffffff;
-      position: relative;
-    }
-
-    /* Dark overlay */
-    body::before {
-      content: "";
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(10, 10, 10, 0.85);
-      z-index: -1;
-    }
-
-    header {
-      background-color: rgba(0, 0, 0, 0.8);
-      padding: 2rem;
-      text-align: center;
-      border-bottom: 1px solid #333;
-    }
-
-    header h1 {
-      font-size: 2.5rem;
-      margin: 0;
-      letter-spacing: 2px;
-    }
-
-    header p {
-      color: #aaa;
-      font-size: 1rem;
-      margin-top: 0.5rem;
-    }
-
-    .product-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 1.5rem;
-      padding: 2rem;
-      animation: fadeIn 1.5s ease-in;
-    }
-
-    .product {
-      background-color: rgba(26, 26, 26, 0.9);
-      border-radius: 10px;
-      padding: 1rem;
-      text-align: center;
-      transition: transform 0.3s;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
-    }
-
-    .product:hover {
-      transform: scale(1.05);
-    }
-
-    .product img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-      border-radius: 8px;
-    }
-
-    .product h3 {
-      margin: 0.5rem 0 0.3rem;
-      font-size: 1.1rem;
-    }
-
-    .product p {
-      color: #ccc;
-      font-size: 0.9rem;
-    }
-
-    .btn {
-      display: inline-block;
-      margin-top: 0.5rem;
-      padding: 0.5rem 1rem;
-      background-color: #ff6a00;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
-    }
-
-    footer {
-      text-align: center;
-      padding: 2rem;
-      font-size: 0.8rem;
-      color: #666;
-      background: rgba(0, 0, 0, 0.8);
-      border-top: 1px solid #222;
-    }
-
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>PuffHaus | The Haus of Smooth Hits</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: #0f0f0f;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #1a1a1a;
+            padding: 20px;
+            text-align: center;
+        }
+        header img {
+            height: 60px;
+            margin-bottom: 10px;
+        }
+        header h1 {
+            font-size: 28px;
+            margin: 0;
+            color: #ff3c00;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .product {
+            background-color: #1e1e1e;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+        }
+        .product img {
+            width: 100%;
+            height: 140px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .product h3 {
+            margin: 10px 0 5px;
+            font-size: 16px;
+            color: #ffb700;
+        }
+        .product p {
+            font-size: 13px;
+            color: #ccc;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 12px;
+            background-color: #ff3c00;
+            color: #fff;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 13px;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>PuffHaus</h1>
-    <p>The Haus of Smooth Hits | Disposable Vapes & Refill Pods</p>
-  </header>
+    <header>
+        <img src="https://via.placeholder.com/180x60?text=PuffHaus+Logo" alt="PuffHaus Logo">
+        <h1>PuffHaus Products</h1>
+        <p>The Haus of Smooth Hits</p>
+    </header>
+    <section class="product-grid">
 
-  <section class="product-grid">
-    <!-- Example product card -->
-    <div class="product">
-      <img src="https://via.placeholder.com/200x200?text=Flavor+1" alt="Flavor 1" />
-      <h3>Berry Ice</h3>
-      <p>5000 Puffs | Nic Salt | Disposable</p>
-      <a href="#" class="btn">Order Now</a>
-    </div>
-    <!-- Copy this block for up to 25 products -->
-  </section>
+        <!-- Custom Product Image -->
+        <div class="product">
+            <img src="https://via.placeholder.com/150x140?text=OXVA+Device" alt="OXVA Vape Device">
+            <h3>OXVA Sleek Pod</h3>
+            <p>Elegant design with smooth delivery. Perfect for on-the-go sessions.</p>
+            <a href="#" class="btn">Order Now</a>
+        </div>
 
-  <footer>
-    &copy; 2025 PuffHaus. All rights reserved.
-  </footer>
+        <!-- Original Product Example -->
+        <div class="product">
+            <img src="https://via.placeholder.com/150x140?text=Product+1" alt="Product 1">
+            <h3>Flavor 1</h3>
+            <p>Rich, smooth vapor with bold notes. Premium refill pod.</p>
+            <a href="#" class="btn">Order Now</a>
+        </div>
+    </section>
 </body>
 </html>
